@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  font-size: 10;
+}
+header {
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  justify-content: row;
+}
+.main-heading {
+  width: 20%;
+  color: white;
+  font-size: 4em;
+  padding: 25px 70px 0;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+  margin-right: 50px;
+}
+.navbar .nav-item {
+  list-style-type: none;
+  padding: 10px 0 0 0;
+  margin: 0 5px 5px 0;
+}
+.navbar .nav-item > a {
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  border: 1px solid white;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+/* First Section  */
+
+.first-container {
+  height: 60vh;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-container h1 {
+  font-size: 4em;
+  padding: 20px;
+}
+.first-container p {
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+/* Second section about me  */
+
+main {
+  display: flex;
+  justify-content: row;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.side-container {
+  width: 40%;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.text h1 {
+  font-size: 3em;
+  padding-bottom: 20px;
+}
+.text p {
+  font-size: 1.3em;
+  padding-bottom: 20px;
+  line-height: 27px;
+}
+
+.text-bottom p {
+  font-size: 1em;
+  line-height: 20px;
+}
+
+.main-container {
+  width: 40%;
+  background-color: white;
+  border: 1px black solid;
+  padding: 50px;
+  border-radius: 30px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  transition: all 0.3s ease-out;
+}
+
+.main-container h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-container form label {
+  font-size: 1.2em;
+}
+.name {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+}
+
+.main-container form input {
+  padding: 10px;
+  margin: 5px 20px 10px 0;
+  border-radius: 100px;
+  border: 1px solid grey;
+}
+.main-container form input {
+  width: 95%;
+}
+.main-container form .btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: 10px 40px;
+  border-radius: 100px;
+  transition: all 0.2s;
+  width: 50%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 10px;
+}
+
+footer {
+  height: 15vh;
+  border-top: 1px solid black;
+  transition: all 0.3s ease-out;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul .footer-item {
+  list-style-type: none;
+  padding: 30px 15px 20px;
+  font-size: 1.1em;
+}
+footer ul .footer-item > a {
+  text-decoration: none;
+  color: grey;
+  transition: all 0.3s ease-out;
+}
+
+footer p {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+/* Animation */
+
+html {
+  scroll-behavior: smooth;
+}
+.item a:hover {
+  color: black;
+}
+.nav-item a:hover {
+  background-color: white;
+}
+.main-container:hover {
+  transform: translatey(-5px);
+  transform: translateX(-5px);
+  box-shadow: 5px 5px black;
+}
+.btn:hover {
+  transform: translatey(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer:hover {
+  box-shadow: 0px -5px 40px black;
+}
+
+/* Media queries  */
+
+@media screen and (max-width: 1110px) {
+  header {
+    display: block;
+  }
+  .main-heading {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .side-container {
+    margin: 50px 50px 0 50px;
+    width: 80%;
+  }
+  .main-container {
+    width: 70%;
+    margin: 20px auto 50px;
+  }
+}
